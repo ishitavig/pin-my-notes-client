@@ -10,6 +10,7 @@ const Home = (props) => {
         if(props.user && Object.keys(props.user.user).length !== 0 && props.user.constructor === Object) {
             props.history.push('/notes')
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[props.user])
 
     return (

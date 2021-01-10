@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState} from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setUser } from '../redux-store/actions/users-action';
