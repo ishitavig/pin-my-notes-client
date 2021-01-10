@@ -16,7 +16,7 @@ const Notes = (props) => {
     useEffect(() => {
         const fetchNotes = async (userId) => {
             axios
-              .get(`http://localhost:5000/notes/${userId}`)
+              .get(`https://pin-my-notes-server.herokuapp.com/notes/${userId}`)
               .then(response => {
                 setNotes(response.data);
               })

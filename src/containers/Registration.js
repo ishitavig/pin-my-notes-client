@@ -13,7 +13,7 @@ const Registration = (props) => {
     const handleCreateUser = async () => {
         // Send POST request to 'users/create' endpoint
         await axios
-          .post(`http://localhost:5000/users/create`, {
+          .post(`https://pin-my-notes-server.herokuapp.com/users/create`, {
             name: name,
             email: email,
             password: password

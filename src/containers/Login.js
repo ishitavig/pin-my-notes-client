@@ -14,7 +14,7 @@ const Login = (props) => {
     const handleLogin = async () => {
         // Send POST request to 'users/login' endpoint
         await axios
-          .post(`http://localhost:5000/users/login`, {
+          .post(`https://pin-my-notes-server.herokuapp.com/users/login`, {
             email: email,
             password: password
           })

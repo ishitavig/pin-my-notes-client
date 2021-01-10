@@ -13,7 +13,7 @@ const NoteForm = (props) => {
         props.saveNote({heading: heading, body: body}); 
         // Send POST request to 'notes/create' endpoint
         await axios
-          .post(`http://localhost:5000/notes/create/${props.user ? props.user.userId : ''}`, {
+          .post(`https://pin-my-notes-server.herokuapp.com/notes/create/${props.user ? props.user.userId : ''}`, {
             heading: heading,
             body: body
           })
